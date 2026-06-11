@@ -97,7 +97,9 @@ Với Screen 2 ta được Blocks sau:
 
 ### c) Lập trình tại Screen3 (Quản lý WebViewer):
 
-Chuyển sang không gian Screen3. Linh kiện WebViewer sẽ tự động tải trang theo đường dẫn cấu hình sẵn ở `HomeUrl` ngay khi màn hình kích hoạt. Công việc duy nhất của lập trình viên là xử lý nút thoát thoát trang để trở lại:
+Chuyển sang không gian Screen3. Linh kiện WebViewer sẽ tự động tải trang theo đường dẫn cấu hình sẵn ở `HomeUrl` ngay khi màn hình kích hoạt. Công việc duy nhất của lập trình viên là xử lý nút thoát thoát trang để trở lại
+
+Với  Screen 3 ta được Blocks sau:
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e31f17ec-2892-4d5e-af69-0d715dd332a5" />
 
