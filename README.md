@@ -4,6 +4,24 @@
 # BÀI TẬP 01
 # BÀI LÀM
 # I. NGUYÊN LÝ HOẠT ĐỘNG
+## 1. Kiến trúc giao diện thiết kế (Designer View)
+
+Cấu trúc công cụ: Môi trường thiết kế UI được phân rã thành 4 thành phần chính: Palette (kho linh kiện đóng gói sẵn), Viewer (không gian mô phỏng thực tế), Components (cây quản lý đối tượng theo phân cấp) và Properties (bảng cấu hình thông số khởi tạo).
+
+Bản chất Kéo thả & Cấu hình: Quá trình kéo thả linh kiện thực chất là cơ chế sinh mã UI tự động. Thao tác thay đổi thuộc tính – đặc biệt là Rename (Đổi tên ID định danh) – là bước quản lý bộ nhớ bắt buộc. Nó giúp chuẩn hóa tên biến (VD: btn_TinhTong), đảm bảo tính chính xác khi gọi hàm sự kiện ở phần xử lý logic.
+
+## 2. Nền tảng lập trình khối lệnh (Blocks View)
+
+Bản chất kỹ thuật: Vận hành theo mô hình Lập trình trực quan định hướng sự kiện (Visual Event-Driven Programming). Hệ thống ngàm nối giữa các khối lệnh hoạt động như một trình kiểm tra kiểu dữ liệu tĩnh (Static Type Checking), giúp loại bỏ hoàn toàn việc truyền sai tham số.
+
+So sánh với mã Native (C++, Python...):
+
+Ưu điểm: Triệt tiêu 100% lỗi cú pháp (Syntax Error), tối ưu hóa tốc độ triển khai bản mẫu (Rapid Prototyping).
+
+Hạn chế: Dễ rơi vào tình trạng "Spaghetti Blocks" gây khó khăn cho việc bảo trì, gỡ lỗi khi dự án mở rộng, và bị giới hạn quyền can thiệp vào các API phần cứng cấp thấp.
+
+Tối ưu hóa mã nguồn với Backpack: Đóng vai trò như một bộ nhớ đệm nâng cao (Advanced Clipboard). Khắc phục giới hạn của lệnh Copy/Paste thông thường bằng cách cho phép lưu trữ và luân chuyển các cụm code logic xuyên suốt giữa nhiều màn hình (Screens) khác nhau.
+
 # II. THỰC HÀNH
 ## 1. KHỞI TẠO KIẾN TRÚC MÀN HÌNH
 
@@ -84,6 +102,26 @@ Chuyển sang không gian Screen3. Linh kiện WebViewer sẽ tự động tải
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e31f17ec-2892-4d5e-af69-0d715dd332a5" />
 
 ## 4. Build APK và test trên Điện thoại
+
+Build App và tải file BTVN01.APK và cài đặt.
+
+Khi các Nút điều hướng đã hoạt động mượt, ta test chức năng của từng Screen:
+
+### a) Test Screen1
+
+<img width="1260" height="2800" alt="1781192065903_182607293721674533_7657304349673072617_e8d1f5d8b837271832a1edf3646cec55" src="https://github.com/user-attachments/assets/ec00117f-b51e-4f49-b8aa-9223457bc09f" />
+
+### b) Test Screen2
+
+<img width="1260" height="2800" alt="1781192065969_182607293721674533_7657304349673072617_512c728943bdbad97fb4a352a45081e2" src="https://github.com/user-attachments/assets/088d3669-58d1-495e-b0dc-5446121dfff5" />
+
+### c) Test Screen3 
+
+<img width="1260" height="2800" alt="1781192066034_182607293721674533_7657304349673072617_083f7f45f68d4d813bcb641454a4b46e" src="https://github.com/user-attachments/assets/3b936fe2-3d91-47fe-ad9e-a737f9029ecf" />
+
+
+
+
 
 
 
